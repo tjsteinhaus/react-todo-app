@@ -12,7 +12,6 @@ const TodoItem: React.FC<Todo> = ( { title, completed, index } ) => {
 	let todo;
 
 	const toggleTodo = () => {
-		console.log( index );
 		dispatch( { type: 'TOGGLE_TODO', index: index } );
 	}
 
